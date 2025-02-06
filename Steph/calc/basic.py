@@ -25,12 +25,15 @@ def div(x, z):
     """ Return Quotient of all parameters """
     return round(x/z, 3)
 
-print("Basic Calculator App ")
+def main():
+    print("Basic Calculator App ")
+    print (f"4 + 3 = {add(4, 3)}")
+    print (f"4 + 3 + 2 = {add(4, 3, 2)}")
+    print (f"4 * 3 = {mult(4, 3)}")
+    print (f"4 * 3 * 2 = {mult(4, 3, 2)}")
+    print (f"4 / 3 = {div(4, 3)}")
+    return None
 
-print (f"4 + 3 = {add(4, 3)}")
-print (f"4 + 3 + 2 = {add(4, 3, 2)}")
-print (f"4 * 3 = {mult(4, 3)}")
-print (f"4 * 3 * 2 = {mult(4, 3, 2)}")
-print (f"4 / 3 = {div(4, 3)}")
-
-sys.exit(0) # exit program with 0 errors
+if __name__ == "__main__":
+    main()
+    sys.exit(0)

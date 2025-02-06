@@ -18,12 +18,15 @@ def power(x, z):
 def sqrt(x):
     """Return Square root of x """
     return round(x**0.5, 2)
+def main():
+    print(" ADVANCED Calculator App")
+    print ("-" * 30)
 
-print(" ADVANCED Calculator App")
-print ("-" * 30)
+    print(f"100 % 30 = {mod(100, 30)}")
+    print(f"100 % 30 = {power(100, 30)}")
+    print(f"\N{square root}100 ={sqrt(100)}")
+    return None
 
-print(f"100 % 30 = {mod(100, 30)}")
-print(f"100 % 30 = {power(100, 30)}")
-print(f"\N{square root}100 ={sqrt(100)}")
-
-sys.exit(0)
+if __name__ == "__main__":
+    main()
+    sys.exit(0)
