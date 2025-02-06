@@ -33,7 +33,8 @@ def main():
     print (f"4 * 3 * 2 = {mult(4, 3, 2)}")
     print (f"4 / 3 = {div(4, 3)}")
     return None
-
+# namespace trick
 if __name__ == "__main__":
+    # Executes only when run directly as a program
     main()
     sys.exit(0)
